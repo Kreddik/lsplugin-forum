@@ -25,8 +25,13 @@
 						<p class="info-item"><span>{$aLang.settings_profile_name}:</span> {$oUser->getProfileName()|escape:'html'}</p>
 					{/if}
 					<p class="info-item"><span>{$aLang.user_rating}:</span> {if $oUser->getRating()>0}+{/if}{$oUser->getRating()}</p>
+<span class="zerostar{if $oUser->getRating() >= +0.00}img{/if}" title="Новичок"></span>
+<span class="onestar{if $oUser->getRating() >= +10.00}img{/if}" title="Вникает"></span>
+<span class="twostar{if $oUser->getRating() >= +25.00}img{/if}" title="Продвинутый"></span>
+<span class="threestar{if $oUser->getRating() >= +40.00}img{/if}" title="Сторожила"></span>
+<span class="fourstar{if $oUser->getRating() >= +50.00}img{/if}" title="Бог"></span>                            
 					{if $oUser->getProfileBirthday()}
-						<p class="info-item"><span>{$aLang.profile_birthday}</span>: {date_format date=$oUser->getProfileBirthday() format="j.n.Y"}</p>
+					<p class="info-item"><span>{$aLang.profile_birthday}</span>: {date_format date=$oUser->getProfileBirthday() format="j.n.Y"}</p>
 					{/if}
 					<p class="info-item"><span>{$aLang.profile_date_registration}:</span> {date_format date=$oUser->getDateRegister() format="j.n.Y"}</p>
 					{if $oUserForum}

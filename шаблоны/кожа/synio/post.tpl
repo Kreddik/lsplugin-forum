@@ -29,7 +29,16 @@
 <span class="onestar{if $oUser->getRating() >= +10.00}img{/if}" title="Вникает"></span>
 <span class="twostar{if $oUser->getRating() >= +25.00}img{/if}" title="Продвинутый"></span>
 <span class="threestar{if $oUser->getRating() >= +40.00}img{/if}" title="Сторожила"></span>
-<span class="fourstar{if $oUser->getRating() >= +50.00}img{/if}" title="Бог"></span>                            
+<span class="fourstar{if $oUser->getRating() >= +50.00}img{/if}" title="Бог"></span>                 
+                                        <p title="{$aLang.user_skill}">
+                                        {$aLang.user_skill}: <b class="s">{$oUser->getSkill()}</b></p>
+<span class="zerostr{if $oUser->getSkill() >= 0}color{/if}" title=">0"></span>
+<span class="onestr{if $oUser->getSkill() >= 1}color{/if}" title=">1"></span>
+<span class="twostr{if $oUser->getSkill() >= 5}color{/if}" title=">5"></span>
+<span class="threestr{if $oUser->getSkill() >= 10}color{/if}" title=">10"></span>
+<span class="fourstr{if $oUser->getSkill() >= 20}color{/if}" title=">20"></span>
+<span class="fivestr{if $oUser->getSkill() >= 30}color{/if}" title=">30"></span>
+<span class="sixstr{if $oUser->getSkill() >= 40}color{/if}" title=">40"></span>
 					{if $oUser->getProfileBirthday()}
 					<p class="info-item"><span>{$aLang.profile_birthday}</span>: {date_format date=$oUser->getProfileBirthday() format="j.n.Y"}</p>
 					{/if}

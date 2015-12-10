@@ -366,6 +366,49 @@
 	width: auto;
 	border-left: 1px solid #ebf0f4;
 }
+
+.zerostarimg { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.onestarimg { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.twostarimg { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.threestarimg { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.fourstarimg { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+
+.zerostar { padding: 0px 0px; background: url(../images/star-empty.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.onestar { padding: 0px 0px; background: url(../images/star-empty.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.twostar { padding: 0px 0px; background: url(../images/star-empty.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.threestar { padding: 0px 0px; background: url(../images/star-empty.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.fourstar { padding: 0px 0px; background: url(../images/star-empty.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+
+.zerostar:hover { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.onestar:hover { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.twostar:hover { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.threestar:hover { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+.fourstar:hover { padding: 0px 0px; background: url(../images/star-full.png) no-repeat; display: inline-block; width: 18px; height: 17px; }
+
+.zerostrcolor{ padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right: 1px solid #000; }
+.onestrcolor { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.twostrcolor { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-right: 1px solid #000; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.102) inset; }
+.threestrcolor  { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-right: 1px solid #000; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.102) inset; }
+.fourstrcolor  { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-right: 1px solid #000; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.102) inset; }
+.fivestrcolor  { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-right: 1px solid #000; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.102) inset; }
+.sixstrcolor  { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-right: 1px solid #000; box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.102) inset; }
+
+.zerostr{ padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #333 50%); border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right: 1px solid #000; }
+.onestr{ padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #333 50%); border-top-left-radius: 0px; border-bottom-left-radius: 3px; border-right: 1px solid #000; }
+.twostr { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #333 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.threestr { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #333 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.fourstr { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #333 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.fivestr { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #333 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.sixstr { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #333 50%); border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-right: 1px solid #000; }
+
+.zerostr:hover { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right: 1px solid #000; }
+.onestr:hover { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.twostr:hover { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.threestr:hover { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.fourstr:hover { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.fivestr:hover  { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
+.sixstr:hover { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-right: 1px solid #000; }
+
 .forum-post-content.no-side { margin-left: 0px; border-left: 0px }
 .forum-post-header {
 	border-bottom: 1px solid #ebf0f4;

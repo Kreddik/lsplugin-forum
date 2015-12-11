@@ -176,6 +176,11 @@
 			</div>
 		</div>
 	</div>
+	<section class="about">
+        <p title="{$aLang.user_about}">
+	{if $oUser->getProfileAbout()}{$oUser->getProfileAbout()}{else}{$aLang.user_about_empty}</p>
+	{/if}
+</section>
 	{if $oUserCurrent && !$noFooter}
 	<footer class="forum-post-footer clearfix">
 		<section class="fl-r">

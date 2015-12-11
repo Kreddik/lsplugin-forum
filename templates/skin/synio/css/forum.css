@@ -409,6 +409,8 @@
 .fivestr:hover  { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-right: 1px solid #000; }
 .sixstr:hover { padding: 0px 5px; font-size: 10px; background: -webkit-linear-gradient(top,  #fffea8 0%, #00BC45 50%); border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-right: 1px solid #000; }
 
+.about { padding: 0 0 0px 165px; -webkit-box-shadow: 0 0 0 1px #fff; min-height: inherit; background: #222; border-radius: 1px;  color: #B8860B; position: relative; }
+
 .forum-post-content.no-side { margin-left: 0px; border-left: 0px }
 .forum-post-header {
 	border-bottom: 1px solid #ebf0f4;

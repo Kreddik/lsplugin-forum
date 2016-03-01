@@ -13,17 +13,19 @@
 		<aside class="forum-post-side">
 			{hook run='forum_post_userinfo_begin' post=$oPost user=$oUser}
 			{if $oUser}
+			<section class="login">
+					<a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()|escape:'html'}</a>
+				</section>
 				<section class="avatar">
 					<div class="status {if $oUser->isOnline()}status-online{else}status-offline{/if}">{if $oUser->isOnline()}{$aLang.user_status_online}{else}{$aLang.user_status_offline}{/if}</div>
 					<a href="{$oUser->getUserWebPath()}"><img alt="{$oUser->getLogin()|escape:'html'}" src="{$oUser->getProfileAvatarPath(100)}" /></a>
 				</section>
-				<section class="login">
-					<a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()|escape:'html'}</a>
-				</section>
-				<section class="info">
+					<section class="info">
 					{if $oUser->getProfileName()}
 						<p class="info-item"><span>{$aLang.settings_profile_name}:</span> {$oUser->getProfileName()|escape:'html'}</p>
 					{/if}
+					<section class="info">
+                                        <p class="info-item"><span>{$aLang.profile_sex}:{if $oUser->getProfileSex()=='man'} {$aLang.profile_sex_man}{elseif $oUser->getProfileSex()=='woman'}{$aLang.profile_sex_woman}{else}Пол не указан{/if}
 					<p class="info-item"><span>{$aLang.user_rating}:</span> {if $oUser->getRating()>0}+{/if}{$oUser->getRating()}</p>
 <span class="zerostar{if $oUser->getRating() >= +0.00}img{/if}" title="Новичок"></span>
 <span class="onestar{if $oUser->getRating() >= +10.00}img{/if}" title="Вникает"></span>
@@ -42,6 +44,9 @@
 					{if $oUser->getProfileBirthday()}
 					<p class="info-item"><span>{$aLang.profile_birthday}</span>: {date_format date=$oUser->getProfileBirthday() format="j.n.Y"}</p>
 					{/if}
+					{assign var="oSession" value=$oUser->getSession()}
+                                        {if $oSession}
+                                        <p class="info-item"><span>{$aLang.user_date_last}:</span>{date_format date=$oSession->getDateLast() hours_back="12" minutes_back="60" now="60" day="day H:i" format="d.m.y, H:i"}</p></section>{/if}
 					<p class="info-item"><span>{$aLang.profile_date_registration}:</span> {date_format date=$oUser->getDateRegister() format="j.n.Y"}</p>
 					{if $oUserForum}
 						<p class="info-item"><span>{$aLang.plugin.forum.user_info_posts}:</span> {$oUserForum->getPostCount()}</p>
